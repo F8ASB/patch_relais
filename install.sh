@@ -20,6 +20,7 @@ mv /usr/share/svxlink/sounds/fr_FR/INDICATIF_RELAIS /usr/share/svxlink/sounds/fr
 #copie des fichiers Logic et RepeaterLogic dans le dossier local
 wget -N -P /usr/share/svxlink/events.d/local https://raw.githubusercontent.com/F8ASB/patch_relais/main/RepeaterLogic.tcl
 wget -N -P /usr/share/svxlink/events.d/local https://raw.githubusercontent.com/F8ASB/patch_relais/main/Logic.tcl
+wget -N -P /etc/spotnik/ https://raw.githubusercontent.com/F8ASB/patch_relais/main/data_reapeater.cfg
 
 #personnalisation du svxlink.cfg pour le mode relais
 
@@ -32,8 +33,4 @@ sed -i "s/^CALLSIGN=.*/CALLSIGN=$indicatif/" /etc/spotnik/data_reapeater.cfg
 sed -i '/LINKS=ALLlink/ { n ; 
 r  data_reapeater.cfg
 }' svxlink.cfg
-
-
-
-
 
