@@ -25,15 +25,14 @@ wget -N -P /usr/share/svxlink/events.d/local https://raw.githubusercontent.com/F
 
 sed -i -r 's/.* LOGICS=SimplexLogic,ReflectorLogic.*/ LOGICS=RepeaterLogic,ReflectorLogic/g' /etc/spotnik/svxlink.cfg
 
-sed -i -r 's/.* CALLSIGN=.*/ CALLSIGN=$indicatif/g' /etc/spotnik/data_reapeater.cfg
+#ajout indicatif
+sed -i "s/^CALLSIGN=.*/CALLSIGN=$indicatif/" /etc/spotnik/data_reapeater.cfg
 
 #ajout des parametres RepeaterLogic dans svxlink.cfg
 sed -i '/LINKS=ALLlink/ { n ; 
 r  data_reapeater.cfg
 }' svxlink.cfg
 
-#ajout indicatif
-sed -i "s/^CALLSIGN=.*/CALLSIGN=$indicatif/" /etc/spotnik/data_reapeater.cfg
 
 
 
