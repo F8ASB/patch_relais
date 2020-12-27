@@ -1,12 +1,16 @@
 
 #!/bin/sh
 
+#sauvegarde
+mv /usr/share/svxlink/events.d/local/Logic.tcl /usr/share/svxlink/events.d/local/Logic.old
+cp /etc/spotnik/svxlink.cfg /etc/spotnik/svxlink.old
+
 #copie des fichiers sons
 
 cd /usr/share/svxlink/sounds
-
 git clone https://github.com/F8ASB/fr_FR_Agnes.git
 
+#sauvegarde des anciens fichiers
 mv /usr/share/svxlink/sounds/fr_FR /usr/share/svxlink/sounds/fr_FR_Old 
 mv /usr/share/svxlink/sounds/fr_FR_Agnes /usr/share/svxlink/sounds/fr_FR 
 
@@ -23,7 +27,6 @@ wget -N -P /usr/share/svxlink/events.d/local https://raw.githubusercontent.com/F
 wget -N -P /etc/spotnik/ https://raw.githubusercontent.com/F8ASB/patch_relais/main/data_reapeater.cfg
 
 #personnalisation du svxlink.cfg pour le mode relais
-
 sed -i -r 's/.* LOGICS=SimplexLogic,ReflectorLogic.*/ LOGICS=RepeaterLogic,ReflectorLogic/g' /etc/spotnik/svxlink.cfg
 
 #ajout indicatif
