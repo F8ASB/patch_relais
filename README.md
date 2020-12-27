@@ -1,11 +1,10 @@
 # patch_relais
-Script pour passer d'un hotspot à un relais
+### Script pour passer d'un hotspot à un relais
 
-Téléchargement:
+_Téléchargement:_
 
-wget https://raw.githubusercontent.com/F8ASB/patch_relais/main/install.sh
+`wget https://raw.githubusercontent.com/F8ASB/patch_relais/main/install.sh`
 
-Lancement:
+_Lancement:_
 
-bash install.sh
-
+`bash install.sh`
