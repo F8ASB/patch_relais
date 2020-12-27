@@ -15,7 +15,7 @@ mv /usr/share/svxlink/sounds/fr_FR /usr/share/svxlink/sounds/fr_FR_Old
 mv /usr/share/svxlink/sounds/fr_FR_Agnes /usr/share/svxlink/sounds/fr_FR 
 
 #recuperation de l'indicatif 
-indicatif=$(grep CALLSIGN svxlink.cfg | head -1| sed 's/.\{9\}//')
+indicatif=$(grep CALLSIGN /etc/spotnik/svxlink.cfg | head -1| sed 's/.\{9\}//')
 echo "Indicatif du Hotspot: "$indicatif
 
 #changement du nom du repertoire sons perso
