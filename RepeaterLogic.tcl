@@ -269,7 +269,7 @@ if { [file exists /etc/spotnik/network]  } {
         }
   if  [string match "*int*" $salon] then {
                 puts "Salon Internationnal";
-                playMsg "Spotnik" "Sinter";
+                playMsg "Spotnik" "Sint";
         }
   if  [string match "*bav*" $salon] then {
                 puts "Salon Bavardage";
