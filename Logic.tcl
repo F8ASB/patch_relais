@@ -623,7 +623,7 @@ if {$cmd == "180"} {
   }
 
 # 99 Salon International
-  if {$cmd == "999"} {
+  if {$cmd == "99"} {
     puts "Executing external command"
     playMsg "Core" "online"
     exec nohup /etc/spotnik/restart.int &
