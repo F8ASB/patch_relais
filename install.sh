@@ -37,3 +37,6 @@ sed -i '/LINKS=ALLlink/ { n ;
 r /etc/spotnik/data_reapeater.cfg
 }' /etc/spotnik/svxlink.cfg
 
+#changement des parametres RepeaterLogic:
+sed -i 's/LOGICS=SimplexLogic,ReflectorLogic/LOGICS=RepeaterLogic,ReflectorLogic/' /etc/spotnik/svxlink.cfg
+
