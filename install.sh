@@ -34,6 +34,6 @@ sed -i "s/^CALLSIGN=.*/CALLSIGN=$indicatif/" /etc/spotnik/data_reapeater.cfg
 
 #ajout des parametres RepeaterLogic dans svxlink.cfg
 sed -i '/LINKS=ALLlink/ { n ; 
-r  data_reapeater.cfg
-}' svxlink.cfg
+r /etc/spotnik/data_reapeater.cfg
+}' /etc/spotnik/svxlink.cfg
 
