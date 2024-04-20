@@ -39,4 +39,4 @@ r /etc/spotnik/data_reapeater.cfg
 
 #changement des parametres RepeaterLogic:
 sed -i 's/LOGICS=SimplexLogic,ReflectorLogic/LOGICS=RepeaterLogic,ReflectorLogic/' /etc/spotnik/svxlink.cfg
-
+sed -i 's/CONNECT_LOGICS=SimplexLogic:144MHZ:945,ReflectorLogic/CONNECT_LOGICS=RepeaterLogic:144MHZ:945,ReflectorLogic/' /etc/spotnik/svxlink.cfg
