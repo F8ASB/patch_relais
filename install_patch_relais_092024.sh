@@ -28,6 +28,7 @@ wget -N -P /etc/svxlink/ https://raw.githubusercontent.com/F8ASB/patch_relais/ma
 
 #personnalisation du svxlink.cfg pour le mode relais
 sed -i -r 's/.* LOGICS=SimplexLogic,ReflectorLogic.*/ LOGICS=RepeaterLogic,ReflectorLogic/g' /etc/svxlink/svxlink.cfg
+sed -i -r 's/.* CONNECT_LOGICS=SimplexLogic:434MHZ:945,ReflectorLogic.*/ LOGICS=RepeaterLogic:434MHZ:945,ReflectorLogic/g' /etc/svxlink/svxlink.cfg
 
 #ajout indicatif
 sed -i "s/^CALLSIGN=.*/CALLSIGN=$indicatif/" /etc/svxlink/data_reapeater.cfg
