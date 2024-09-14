@@ -250,8 +250,8 @@ if {  ($heure >= 1800) || ($heure <= 0300) } {
 #DETECTION SALON CONNECTE
 #
 
-if { [file exists /etc/spotnik/network]  } {
-        set sa [open "/etc/spotnik/network" "r"]
+if { [file exists /etc/svxlink/network]  } {
+        set sa [open "/etc/svxlink/network" "r"]
         set salon [read $sa]
 
   if  [string match "*rrf*" $salon] then {
