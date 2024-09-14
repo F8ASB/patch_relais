@@ -590,7 +590,7 @@ if {$cmd == "180"} {
   if {$cmd == "95"} {
     puts "Executing external command"
     playMsg "Core" "online"
-    exec nohup /etc/spotnik/restart.default &
+    exec nohup /etc/svxlink/restart.default &
     return 1
   }
 
@@ -600,7 +600,7 @@ if {$cmd == "180"} {
   if {$cmd == "96"} {
     puts "Executing external command"
     playMsg "Core" "online"
-    exec nohup /etc/spotnik/restart.rrf &
+    exec nohup /etc/svxlink/restart.rrf &
     return 1
   }
 
@@ -609,7 +609,7 @@ if {$cmd == "180"} {
   if {$cmd == "97"} {
     puts "Executing external command"
     playMsg "Core" "online"
-    exec nohup /etc/spotnik/restart.fon &
+    exec nohup /etc/svxlink/restart.fon &
     return 1
   }
 
@@ -618,15 +618,15 @@ if {$cmd == "180"} {
   if {$cmd == "98"} {
     puts "Executing external command"
     playMsg "Core" "online"
-    exec nohup /etc/spotnik/restart.tec &
+    exec nohup /etc/svxlink/restart.tec &
     return 1
   }
 
-# 99 Salon International
-  if {$cmd == "99"} {
+# 49 Salon International
+  if {$cmd == "49"} {
     puts "Executing external command"
     playMsg "Core" "online"
-    exec nohup /etc/spotnik/restart.int &
+    exec nohup /etc/svxlink/restart.ri49 &
     return 1
   }
 
@@ -634,7 +634,7 @@ if {$cmd == "180"} {
   if {$cmd == "100"} {
     puts "Executing external command"
     playMsg "Core" "online"
-   exec nohup /etc/spotnik/restart.bav &
+   exec nohup /etc/svxlink/restart.bav &
     return 1
   }
 
@@ -642,29 +642,22 @@ if {$cmd == "180"} {
   if {$cmd == "101"} {
     puts "Executing external command"
     playMsg "Core" "online"
-    exec nohup /etc/spotnik/restart.loc &
+    exec nohup /etc/svxlink/restart.loc &
     return 1
   }
 
-# 102 salon Experimental
-  if {$cmd == "102"} {
-    puts "Executing external command"
-    playMsg "Core" "online"
-    exec nohup /etc/spotnik/restart.exp &
-    return 1
-  }
 # 103 Echolink
   if {$cmd == "103"} {
     puts "Executing external command"
     playMsg "Core" "online"    
-    exec nohup /etc/spotnik/restart.el &
+    exec nohup /etc/svxlink/restart.el &
     return 1
   }
 # 104 salon Regional
   if {$cmd == "102"} {
     puts "Executing external command"
     playMsg "Core" "online"    
-    exec nohup /etc/spotnik/restart.reg &
+    exec nohup /etc/svxlink/restart.reg &
     return 1
   }
 
