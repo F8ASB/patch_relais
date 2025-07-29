@@ -283,9 +283,9 @@ if { [file exists /etc/svxlink/network]  } {
                 puts "Reseau Regional";
                 playMsg "Spotnik" "Sreg";
   }
-  if  [string match "*exp*" $salon] then {
-                puts "Reseau Experimental";
-                playMsg "Spotnik" "Sexp";
+  if  [string match "*ri49*" $salon] then {
+                puts "Reseau RI49";
+                playMsg "Spotnik" "Sri49";
    }
    }
 
